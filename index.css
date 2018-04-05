@@ -1,0 +1,127 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+header {
+    width: 100%;
+}
+
+
+.menu-bar {
+    justify-content: space-between;
+}
+
+.left-menu img {
+    width: 50px;
+    height: 40px;
+}
+
+.left-menu {
+    display: inline-block;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.right-menu {
+    display: inline-block;
+}
+
+.right-menu:hover {
+    cursor: pointer;
+}
+
+.left-menu img:hover {
+    cursor: pointer;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+#dinga {
+    width: 60px;
+    height: 40px;
+}
+
+#search-icon {
+    width: 50px;
+    height: 40px;
+}
+
+.cover {
+    background-image: url("./cover.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    height: 500px; 
+    z-index: -2;
+}
+
+section {
+    height: 600px;
+    background-color: white;
+    border: 1px solid lightgray;
+    z-index: -1;
+    margin: -200px auto 0 auto;
+    width: 960px;
+    border-radius: 10px;
+    display: flex;
+    align-self: center;
+}
+
+.contact img {
+    width: 30px;
+    height: 30px;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.452);
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 0;
+    display: none;
+}
+
+.side-panel {
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    display: none;
+}
+
+.side-menu ul {
+    list-style: none;
+}
+
+
+
+
+footer {
+    height: 15%;
+    width: 100%;
+    background-color: #efefef;
+    position: relative;
+    text-align: center;
+    clear: both;
+    z-index: -1;
+
+}
+
+#copyright {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
