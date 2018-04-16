@@ -1,70 +1,104 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>himeBlog</title>
-        <link rel="stylesheet" href="./index.css" type="text/css">
-    </head>
-    <body>
-        <header>
-            <div class="menu-bar flex">
-                <div class="left-menu">
-                    <img src="./menu_icon.png" alt="menu_icon">
-                </div>
-                <div class="menu flex">
-                    <a href="#"><img id="dinga" src="./딩가딩가.png" alt="딩가딩가.png"></a>
-                </div>
-                <div class="right-menu flex">
-                    <img id="search-icon" src="./search-icon.png" alt="search-icon">
-                </div>
-            </div>
-        </header>
-        <div class="cover">
-        </div>
-        <div class="mask">
+<html lang="en">
+<head>
+  <title>himeBlog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
 
-        </div>
-        <section>
-            <ul>
-                <li>뉴스피드 보여 줄 것임</li>
+    .navbar {
+    margin-bottom: 0;
+    background-color: pink;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    }
+    .navbar li a, .navbar .navbar-brand {
+        color: #fff !important;
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: pink !important;
+        background-color: #fff !important;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+    }
+        
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: pink;
+      color: white;
+      padding: 15px;
+    }
+    
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row content">
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a href="#"><img src="./딩가딩가.png" class="navbar-brand"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#pricing">PRICING</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
-        </section>
-        <nav class="side-panel">
-            <div class="profile">
-                <img src="./by7.png" alt="by7.png">
-                <p>강보윤</p>
-                <p>인하대학교 컴퓨터공학과</p>
-            </div>
-            <div class="contact">
-                <a href="https://www.facebook.com/profile.php?id=100004937532760" target="_blank"><img src="./facebook-icon.png" alt="facebook.png"></a>
-                <a href="https://boyunjjang1.github.io/" target="_blank"><img src="./blog-icon.png" alt="blog.png"></a>
-                <a href="https://github.com/boyunjjang1" target="_blank"><img src="./github-icon.png" alt="github-icon.png"></a>
-                <a href="https://instagram.com/bo_yoonvely"><img src="./instagramm-icon.png" alt="instagramm-icon"></a>
-            </div>
-            <div class="side-menu">
-                <ul>
-                    <li><a herf="#">PROJECT</a></li>
-                    <li><a herf="#">PROGRAMMING</a>
-                        <ul>
-                            <li><a herf="#">C</a></li>
-                            <li><a herf="#">C++</a></li>
-                            <li><a herf="#">HTML</a></li>
-                            <li><a herf="#">CSS</a></li>
-                            <li><a herf="#">JS</a></li>
-                            <li><a herf="#">NodeJS</a></li>
-                            <li><a herf="#">Ruby</a></li>
-                            <li><a herf="#">Etc</a></li>
-                        </ul>
-                    </li>
-                    <li><a herf="#">ABOUT</a></li>
-                    <li><a herf="#">Etc</a></li>
-                </ul>
-            </div>
-        </nav>
-        <footer>
-            <p id="copyright">copyright 2018 design by boyun
-                <a href="mailto:boyunqueen@gmail.com" subject="보윤님께">관리자에게 Email</a>
-            </p>
-        </footer>
-    </body>
+          </div>
+        </div>
+      </nav>
+    <div class="col-sm-9">
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      
+
+      <h4>Leave a Comment:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-">Submit</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> Comments:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+    <p id="copyright">copyright 2018 design by boyun
+        <a href="mailto:boyunqueen@gmail.com" subject="보윤님께">관리자에게 Email</a>
+    </p>
+</footer>
+
+</body>
 </html>
