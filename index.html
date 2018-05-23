@@ -42,63 +42,98 @@
       padding: 15px;
     }
     
+    #main {
+      position: relative;
+      z-index: 9999;
+    }
+    #loading {
+      position: absolute;
+      top : 32%;
+      left: 40%;
+      z-index: 10001;
+      }
+    
+    #load-img {
+      height: 300px;
+      width: 300px;
+      border-radius: 30px;
+    }
+
+    #mask {
+      position: fixed; /* body의 의존하지 않고 고정임*/
+      width: 100%;
+      height: 100%;
+      z-index: 10000;
+      opacity: 0.90;
+      background-color: black;
+    }
+
   </style>
 </head>
 <body>
-<div class="container-fluid">
-  <div class="row content">
-    <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-            <a href="#"><img src="./딩가딩가.png" class="navbar-brand"></a>
+  <script>
+    $('#load-wrapper').show().ready(function() {
+      setTimeout(function() {
+        $('#load-wrapper').fadeOut();
+      }, 1500);
+    })
+  </script>
+  <div id="load-wrapper">
+    <div id="mask"></div>
+    <div id="loading"><img id="load-img" src="./loading.gif" alt="loading.gif"></div>
+  </div>
+  <div id="main" class="container-fluid">
+    <div class="row content">
+      <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a href="#"><img src="./딩가딩가.png" class="navbar-brand"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#pricing">PRICING</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#services">SERVICES</a></li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#pricing">PRICING</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
+        </nav>
+      <div class="col-sm-9">
+        <h4><small>RECENT POSTS</small></h4>
+        <hr>
+        <h4>Leave a Comment:</h4>
+        <form role="form">
+          <div class="form-group">
+            <textarea class="form-control" rows="3" required></textarea>
           </div>
-        </div>
-      </nav>
-    <div class="col-sm-9">
-      <h4><small>RECENT POSTS</small></h4>
-      <hr>
-      
-
-      <h4>Leave a Comment:</h4>
-      <form role="form">
-        <div class="form-group">
-          <textarea class="form-control" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-">Submit</button>
-      </form>
-      <br><br>
-      
-      <p><span class="badge">2</span> Comments:</p><br>
-      
-      <div class="row">
-        <div class="col-sm-2 text-center">
-          
+          <button type="submit" class="btn btn-">Submit</button>
+        </form>
+        <br><br>
+        
+        <p><span class="badge">2</span> Comments:</p><br>
+        
+        <div class="row">
+          <div class="col-sm-2 text-center">
             
+              
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<footer class="container-fluid text-center">
-    <p id="copyright">copyright 2018 design by boyun
-        <a href="mailto:boyunqueen@gmail.com" subject="보윤님께">관리자에게 Email</a>
-    </p>
-</footer>
+  <footer class="container-fluid text-center">
+      <p id="copyright">copyright 2018 design by boyun
+          <a href="mailto:boyunqueen@gmail.com" subject="보윤님께">관리자에게 Email</a>
+      </p>
+  </footer>
 
 </body>
 </html>
